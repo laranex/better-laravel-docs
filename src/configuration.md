@@ -22,6 +22,8 @@ Following is the default configuration file, and you are free to update the valu
 ```php
 return [
     'enable_routes' => env('BETTER_LARAVEL_ENABLE_ROUTES', true),
+    'web_routes_prefix' => env('BETTER_LARAVEL_WEB_ROUTES_PREFIX', ''),
+    'api_routes_prefix' => env('BETTER_LARAVEL_API_ROUTES_PREFIX', 'api')
 ];
 ```
 
