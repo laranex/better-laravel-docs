@@ -25,16 +25,22 @@ return [
 ];
 ```
 
-| Option        | Default |                                                           Action |
-|---------------|:-------:|-----------------------------------------------------------------:|
-| enable_routes |  true   | Should the package load the routes from routes/api & routes/web? |
+| Option            | Default |                                                           Action |
+|-------------------|:-------:|-----------------------------------------------------------------:|
+| enable_routes     |  true   | Should the package load the routes from routes/api & routes/web? |
+| web_routes_prefix |   ''    |               Prefix for registering the routes under routes/web |   
+| api_routes_prefix |   ''    |               Prefix for registering the routes under routes/api |
 
 ### Provider
 
-Currently, the package doesn't support this feature yet. But we will make it happen soon.
+```bash
+php artisan vendor:publish --tag=better-laravel-provider
+```
 
 ### Stubs
 
-Currently, the package doesn't support this feature yet. But we will make it happen soon.
+```bash
+ php artisan vendor:publish --tag=better-laravel-stubs
+```
 
 
