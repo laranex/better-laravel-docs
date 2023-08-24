@@ -4,10 +4,11 @@
 
 ## What is Better Laravel?
 
-Better Laravel is a simple, lightweight Laravel Package which allows you to build scalable Laravel Application and is built on top of:
+Better Laravel is a simple, lightweight Laravel Package which allows you to build scalable Laravel Application and built on top of -
 - Modular & Domain Architecture
 - Job Driven Architecture
 - Clean Code Architecture
+- Domain Driven Architecture
 
 
 
