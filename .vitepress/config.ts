@@ -10,7 +10,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     cleanUrls: false,
     srcDir: 'src',
 
-    head: [
+    /*head: [
         ['link', {
             rel: 'apple-touch-icon',
             sizes: '180x180',
@@ -56,7 +56,7 @@ export default defineConfigWithTheme<ThemeConfig>({
             property: 'twitter:image',
             content: 'https://forge.laravel.com/social-share.png',
         }],
-    ],
+    ],*/
 
     themeConfig: {
         logo: {
