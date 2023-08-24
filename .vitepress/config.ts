@@ -6,7 +6,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     extends: config,
     title: 'Better Laravel',
     description: 'A package which allows you to build scalable Laravel Application',
-    base: '/docs/',
+    base: '/',
     cleanUrls: false,
     srcDir: 'src',
 
