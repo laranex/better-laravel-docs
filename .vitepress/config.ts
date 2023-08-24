@@ -10,7 +10,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     cleanUrls: false,
     srcDir: 'src',
 
-    /*head: [
+    head: [
         ['link', {
             rel: 'apple-touch-icon',
             sizes: '180x180',
@@ -20,33 +20,33 @@ export default defineConfigWithTheme<ThemeConfig>({
             rel: 'icon',
             sizes: '16x16',
             type: 'image/png',
-            href: 'https://forge.laravel.com/favicon-16x16.png',
+            href: '/icons/16x16.png',
         }],
         ['link', {
             rel: 'icon',
             sizes: '32x32',
             type: 'image/png',
-            href: 'https://forge.laravel.com/favicon-32x32.png',
+            href: '/icons/32x32.png',
         }],
         ['link', {
             rel: 'manifest',
             href: 'https://forge.laravel.com/site.webmanifest',
         }],
-        ['link', {
+        /*['link', {
             rel: 'mask-icon',
-            href: 'https://forge.laravel.com/safari-pinned-tab.svg',
-        }],
+            href: '/icons/32x32.png',
+        }],*/
         ['meta', {
             name: 'msapplication-TileColor',
             content: '#18b69b',
         }],
         ['meta', {
             name: 'msapplication-TileImage',
-            content: 'forge.laravel.com/mstile-144x144.png',
+            content: '/icons/144x144.png',
         }],
         ['meta', {
             property: 'og:image',
-            content: 'https://forge.laravel.com/social-share.png',
+            content: '/icons/1200x630_facebook.png',
         }],
         ['meta', {
             property: 'twitter:card',
@@ -54,9 +54,9 @@ export default defineConfigWithTheme<ThemeConfig>({
         }],
         ['meta', {
             property: 'twitter:image',
-            content: 'https://forge.laravel.com/social-share.png',
+            content: '/icons/1200x675_twitter.png',
         }],
-    ],*/
+    ],
 
     themeConfig: {
         logo: {
@@ -80,7 +80,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         search: {
             provider: 'local',
             options: {
-                placeholder: 'Search Better Laravel...',
+                placeholder: 'Search ...',
             },
         }
     },
