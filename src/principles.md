@@ -5,6 +5,14 @@
 > Better Laravel is not a new framework, it is just a set of principles which you can follow to build a better Laravel Application.
 > You just need to follow the following principles, and the Application will turn into `better` and more `human-readable` code.
 
+### Routes
+
+Route are just the same as Laravel default routes. The only difference is that we load our load from our BetterLaravelServiceProvider and of course, 
+you can have 100% control over the routes. See more at
+- [Configuration](/configuration.html#config)
+- [BetterLaravelServiceProvider.php](https://github.com/laranex/better-laravel/blob/master/src/BetterLaravelServiceProvider.php#L46)
+
+
 ### Domain
 
 Domain is where our business logic lives and a domain can have followings.
