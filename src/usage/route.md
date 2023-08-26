@@ -5,9 +5,11 @@
 You can generate a route by following command.
 
 ```bash
-php artisan better:route
+php artisan better:route blog v1 --api
 ```
-
+::: info
+Generated route will be at `routes/api/v1/blog.php`
+:::
 ### Arguments
 
 - route : name of the generated route file
