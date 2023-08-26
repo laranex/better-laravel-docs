@@ -8,7 +8,7 @@ You can generate a route by following command.
 php artisan better:route blog v1 --api
 ```
 ::: info
-Generated request will be at `routes/api/v1/blog.php`
+Generated route will be at `routes/api/v1/blog.php`
 :::
 ### Arguments
 
