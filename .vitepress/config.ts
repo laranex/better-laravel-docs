@@ -76,6 +76,12 @@ export default defineConfigWithTheme<ThemeConfig>({
                     {text: 'Configuration', link: '/configuration'}
                 ],
             },
+            {
+                text: "Usage",
+                items: [
+                    {text: 'Route', link: '/usage/route'}
+                ],
+            },
         ],
         search: {
             provider: 'local',
