@@ -31,7 +31,7 @@ Module is where we wrap our business layers into separate units. A module can ha
 - Features
 
 :::warning
-Resources under domains are `not sharable` across the application and these are intended for single purpose.
+Resources under modules are `not sharable` across the application and these are intended for single purpose.
 This means that you can only consume these resources from the same module.
 :::
 
@@ -58,7 +58,7 @@ Request is Responsible for
 ### Operation
 
 Operation is Responsible for
-- Running the Jos(s)
+- Running the Job(s)
 
 ### Job
 

@@ -79,7 +79,12 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
                 text: "Usage",
                 items: [
-                    {text: 'Route', link: '/usage/route'}
+                    {text: 'Route', link: '/usage/route'},
+                    {text: 'Controller', link: '/usage/controller'},
+                    {text: 'Feature', link: '/usage/feature'},
+                    {text: 'Request', link: '/usage/request'},
+                    {text: 'Operation', link: '/usage/operation'},
+                    {text: 'Job', link: '/usage/job'},
                 ],
             },
         ],
