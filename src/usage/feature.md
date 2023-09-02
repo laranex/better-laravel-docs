@@ -21,11 +21,11 @@ Generated feature will be at `app/Modules/BlogModule/Features/StoreBlogFeature.p
 - See more at
   - [FeatureMakeCommand.php](https://github.com/laranex/better-laravel/blob/master/src/Commands/FeatureMakeCommand.php)
 
-### Calling Jobs
-Calling job from a feature or an operation is straightforward using run method.
+### Running Jobs
 :::warning
-Feature must extend the Better Laravel feature `Laranex\BetterLaravel\Cores\Job` to work with the `run` method.
+Feature must extend the Better Laravel feature `Laranex\BetterLaravel\Cores\Feature` to work with the `run` or `runInQueue` method.
 :::
+Running jobs from a feature or an operation is straightforward using `run` method.
 ```php
 use App\Domains\Blog\Jobs\StoreBlogJob;
 use App\Domains\Blog\Requests\StoreBlogRequest;
@@ -44,11 +44,8 @@ class StoreBlogFeature extends Feature
 }
 ```
 
-### Calling Queue Jobs
-Calling job from a feature or an operation is straightforward using runInQueue method.
-:::warning
-Feature must extend the Better Laravel feature `Laranex\BetterLaravel\Cores\Job` to work with the `runInQueue` method.
-:::
+### Running Queue Jobs
+Running queue jobs from a feature or an operation is straightforward using `runInQueue` method.
 ```php
 use App\Domains\Blog\Jobs\StoreBlogJob;
 use App\Domains\Blog\Requests\StoreBlogRequest;
@@ -67,11 +64,8 @@ class StoreBlogFeature extends Feature
 }
 ```
 
-### Calling Operations
-An Operation can be called using the run method.
-:::warning
-Operation must extend the Better Laravel operation `Laranex\BetterLaravel\Cores\Operation` to work with the `run` method.
-:::
+### Running Operations
+An Operation can be run using the `run` method.
 ```php
 use App\Domains\Blog\Jobs\StoreBlogJob;
 use App\Domains\Blog\Requests\StoreBlogRequest;
