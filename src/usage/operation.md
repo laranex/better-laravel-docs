@@ -22,10 +22,10 @@ Generated operation will be at `app/Modules/BlogModule/Operations/NotifySubscrib
   - [OperationMakeCommand.php](https://github.com/laranex/better-laravel/blob/master/src/Commands/OperationMakeCommand.php)
 
 ### Calling Jobs From Operation
-Calling this job from a feature or an operation is straightforward using run method.
 :::warning
-Operation must extend the Better Laravel operation `Laranex\BetterLaravel\Cores\Operation` to work with the `run` method.
+Operation must extend the Better Laravel operation `Laranex\BetterLaravel\Cores\Operation` to work with the `run` or `runInQueue` method.
 :::
+Calling jobs from a feature or an operation is straightforward using `run` method.
 ```php
 use App\Domains\Blog\Jobs\NotifyViaEmailJob;
 use App\Domains\Blog\Jobs\NotifyViaPushNotificationJob;
@@ -43,16 +43,14 @@ class NotifySubscribersOperation extends Operation
     public function handle(): void
     {
         $this->run(new NotifyViaEmailJob($this->payload));
+        
         $this->run(new NotifyViaPushNotificationJob($this->payload));
     }
 }
 ```
 
 ### Calling Queue Jobs From Operation
-Calling queue job from a feature or an operation is straightforward using runInQueue method.
-:::warning
-Operation must extend the Better Laravel operation `Laranex\BetterLaravel\Cores\Operation` to work with the `runInQueue` method.
-:::
+Calling queue jobs from a feature or an operation is straightforward using `runInQueue` method.
 ```php
 use App\Domains\Blog\Jobs\NotifyViaEmailJob;
 use App\Domains\Blog\Jobs\NotifyViaPushNotificationJob;

@@ -21,7 +21,27 @@ Generated job will be at `app/Domains/Blog/Jobs/StoreBlogJob.php`
 - See more at
   - [JobMakeCommand.php](https://github.com/laranex/better-laravel/blob/master/src/Commands/JobMakeCommand.php)
 
-### Queue Jobs
+### Job
+```php
+use Laranex\BetterLaravel\Cores\Job;
+
+class StoreBlogJob extends Job
+{
+    private array $payload;
+
+    public function __construct(array $payload)
+    {
+        $this->payload = $payload;
+    }
+
+    public function handle(): void
+    {
+        // here is your logic to handle data
+    }
+}
+```
+
+### Queue Job
 You may turn any job into a queueable job that will be dispatched using Laravel Queues rather than running synchronously, 
 by simply extending `Laranex\BetterLaravel\Cores\QueueableJob`.
 ```php
@@ -29,8 +49,6 @@ use Laranex\BetterLaravel\Cores\QueueableJob;
 
 class NotifyViaEmailJob extends QueueableJob
 {
-    public $queue = 'default';
-
     private array $payload;
 
     public function __construct(array $payload)

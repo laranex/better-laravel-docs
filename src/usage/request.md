@@ -20,3 +20,22 @@ Generated request will be at `app/Domains/Blog/Requests/StoreBlogRequest.php`
 - --force : the command will fail if there is existing file with the given path and name, this option will delete the existing file and replace with new generated file
 - See more at
   - [RequestMakeCommand.php](https://github.com/laranex/better-laravel/blob/master/src/Commands/RequestMakeCommand.php)
+
+
+### Request
+```php
+use Laranex\BetterLaravel\Cores\Request;
+
+class StoreBlogRequest extends Request
+{
+    public function authorize(): bool
+    {
+        return false;
+    }
+
+    public function rules(): array
+    {
+        // here is your validation rules
+    }
+}
+```

@@ -22,10 +22,10 @@ Generated controller will be at `app/Modules/BlogModule/Http/Controllers/BlogCon
   - [ControllerMakeCommand.php](https://github.com/laranex/better-laravel/blob/master/src/Commands/ControllerMakeCommand.php)
 
 ### Serving Features
-All you need to do is call serve within the controller method.
 :::warning
 The controller must extend the Better Laravel controller `Laranex\BetterLaravel\Cores\Controller` to work with the `serve` method.
 :::
+All you need to do is call `serve` within the controller method.
 ```php
 use App\Modules\BlogModule\Features\StoreBlogFeature;
 use Laranex\BetterLaravel\Cores\Controller;
