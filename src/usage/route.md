@@ -22,3 +22,11 @@ Generated route will be at `routes/api/v1/blog.php`
   - [BetterLaravelServiceProvider.php](https://github.com/laranex/better-laravel/blob/master/src/BetterLaravelServiceProvider.php#L46)
   - [RouteMakeCommand.php](https://github.com/laranex/better-laravel/blob/master/src/Commands/RouteMakeCommand.php)
 - --force : the command will fail if there is existing file with the given path and name, this option will delete the existing file and replace with new generated file
+
+### Calling A Controller Action
+
+```php
+Route::group(['prefix' => '/v1/blogs'], function() {
+    Route::post('/', [BlogController::class, 'store']);
+});
+```

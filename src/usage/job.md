@@ -20,3 +20,27 @@ Generated job will be at `app/Domains/Blog/Jobs/StoreBlogJob.php`
 - --force : the command will fail if there is existing file with the given path and name, this option will delete the existing file and replace with new generated file
 - See more at
   - [JobMakeCommand.php](https://github.com/laranex/better-laravel/blob/master/src/Commands/JobMakeCommand.php)
+
+### Queue Jobs
+You may turn any job into a queueable job that will be dispatched using Laravel Queues rather than running synchronously, 
+by simply extending `Laranex\BetterLaravel\Cores\QueueableJob`.
+```php
+use Laranex\BetterLaravel\Cores\QueueableJob;
+
+class NotifyViaEmailJob extends QueueableJob
+{
+    public $queue = 'default';
+
+    private array $payload;
+
+    public function __construct(array $payload)
+    {
+        $this->payload = $payload;
+    }
+
+    public function handle(): void
+    {
+        // notify to each subscriber will be processed in the queue
+    }
+}
+```
