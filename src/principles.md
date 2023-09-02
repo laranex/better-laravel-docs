@@ -68,13 +68,13 @@ Job is Responsible for
 
 ### Operation VS Feature
 
-Even though both Operation and Feature are responsible for running the Job(s), there is a slight difference between them.
+Even though both of Operation and Feature are responsible for running the Job(s), there is a slight difference between them.
 - Feature can be served from the Controller but the Operation cannot be.
 - Operation can only be run from the Feature. It means it cannot work without the Feature.
 - Operation is optional in application, but the Feature is not.
 
 :::tip
-Operation can be useful in running a set of Jobs which will have to run from the another Feature as well.
+Operation can be useful in running a set of Jobs which will have to be run from the another Feature as well.
 Instead of running same Job(s) from multiple Features, we can `collect those duplicate Job(s) into a single Operation`,
 and run that Operation from multiple Features.
 :::
