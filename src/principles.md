@@ -25,7 +25,7 @@ you can consume any of these from any modules, no limitation at all.
 :::
 
 ### Module
-Module is where we wrap our business layers into separate units. A module can have followings.
+Modules are where we wrap our business layers into separate units. A module can have followings.
 - HTTP
   - Controllers
 - Features
