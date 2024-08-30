@@ -7,7 +7,7 @@
 
 ### Routes
 
-Route are just the same as Laravel default routes. The only difference is that we load our load from our BetterLaravelServiceProvider and of course, 
+Route are just the same as Laravel default routes. The only difference is that we load our routes from our BetterLaravelServiceProvider and of course, 
 you can have 100% control over the routes. See more at
 - [Configuration](/configuration.html#config)
 - [BetterLaravelServiceProvider.php](https://github.com/laranex/better-laravel/blob/master/src/BetterLaravelServiceProvider.php#L46)
