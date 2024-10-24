@@ -59,12 +59,13 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     themeConfig: {
+        githubUrl: 'https://github.com/laranex/better-laravel',
         logo: {
             light: '/logo.svg',
             dark: '/logo.svg',
         },
         nav: [
-            {text: 'Github', link: 'https://github.com/laranex/better-laravel'}
+            // {text: 'Github', link: 'https://github.com/laranex/better-laravel'}
         ],
         sidebar: [
             {
